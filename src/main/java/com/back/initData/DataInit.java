@@ -4,6 +4,7 @@ import com.back.entity.Member;
 import com.back.entity.Post;
 import com.back.service.MemberService;
 import com.back.service.PostService;
+import com.back.service.MemberService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.context.annotation.Bean;
@@ -22,7 +23,6 @@ public class DataInit {
         this.self = self;
         this.memberService = memberService;
         this.postService=postService;
-    }
 
     @Bean
     public ApplicationRunner baseInitDataRunner() {
